@@ -1,3 +1,9 @@
-const arr = [1, 2, 3];
-const iAmJavascriptES6 = () => console.log(...arr);
-window.iAmJavascriptES6 = iAmJavascriptES6;
+// index.js
+
+import Vue from 'vue'
+import HelloComponent from './vue/Hello.vue'
+import App from './App.vue'
+
+new Vue({
+	render: h => h(App)
+}).$mount("#app");
