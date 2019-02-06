@@ -3,6 +3,7 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
 module.exports = {
 	module: {
@@ -36,6 +37,7 @@ module.exports = {
 		/* https://kr.vuejs.org/v2/guide/installation.html#Runtime-Compiler-vs-Runtime-only */
 		alias: {
 			'vue$': 'vue/dist/vue.esm.js',
+			Component: path.resolve(__dirname, 'src/component')
 		},
 		extensions: ['*', '.js', '.vue', '.json']
 	},
