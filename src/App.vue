@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="main">
     <h1>Vue App Started!</h1>
     <div id="nav">
       <ul>
