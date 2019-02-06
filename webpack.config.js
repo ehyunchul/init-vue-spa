@@ -37,7 +37,8 @@ module.exports = {
 		/* https://kr.vuejs.org/v2/guide/installation.html#Runtime-Compiler-vs-Runtime-only */
 		alias: {
 			'vue$': 'vue/dist/vue.esm.js',
-			Component: path.resolve(__dirname, 'src/component')
+			'Component': path.resolve(__dirname, 'src/component'),
+			'@': path.resolve(__dirname, 'src')
 		},
 		extensions: ['*', '.js', '.vue', '.json']
 	},
