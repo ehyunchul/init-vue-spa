@@ -1,7 +1,7 @@
 // index.js
 
 import Vue from 'vue'
-import HelloComponent from './vue/Hello.vue'
+import HelloComponent from './component/Hello.vue'
 import App from './App.vue'
 
 new Vue({

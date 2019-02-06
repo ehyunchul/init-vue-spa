@@ -1,7 +1,7 @@
 // webpack.config.js
 
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -14,13 +14,13 @@ module.exports = {
 				test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader"
+                    loader: 'babel-loader'
                 }
 			},
 			{
 				test: /\.vue$/,
 				use: {
-					loader: "vue-loader"
+					loader: 'vue-loader'
 				}
 			},
 			{
@@ -35,7 +35,7 @@ module.exports = {
 	resolve: {
 		/* https://kr.vuejs.org/v2/guide/installation.html#Runtime-Compiler-vs-Runtime-only */
 		alias: {
-			"vue$": "vue/dist/vue.esm.js"
+			'vue$': 'vue/dist/vue.esm.js',
 		},
 		extensions: ['*', '.js', '.vue', '.json']
 	},
