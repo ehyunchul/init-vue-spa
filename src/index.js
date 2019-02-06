@@ -12,15 +12,15 @@ Vue.use(VueRouter);
 const Hello = HelloVue;
 
 const routes = [
-	{ path: '/hello', component: Hello },
-	{ path: '/goodbye', component: GoodbyeVue },
+  {path: '/hello', component: Hello},
+  {path: '/goodbye', component: GoodbyeVue},
 ];
 
 const router = new VueRouter({
-	routes
+  routes
 });
 
 const app = new Vue({
-	router,
-	render: h => h(App)
+  router,
+  render: h => h(App)
 }).$mount('#app');
